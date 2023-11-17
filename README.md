@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Star Wars People Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Star Wars People Explorer, a project showcasing my skills as a front-end developer. This application, developed in ReactJS, is a result of completing the Front End Developer Challenge.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+The Star Wars People Explorer is a frontend application that interacts with the Star Wars API to present a user-friendly table of characters. It incorporates a variety of features to enhance the user experience, adhering to the specified functionality and acceptance criteria.
 
-### `npm start`
+## Project Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Table Display
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Pagination:** The table efficiently handles the display of characters, with 10 records per page for a seamless browsing experience.
+- **Sorting and Searching:** Users can easily sort and search through the table, making it convenient to find their favorite characters.
 
-### `npm test`
+### Species Icons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Each character entry is accompanied by an icon that visually represents their species.
+- Icons include the Font Awesome Android icon for droids, the user circle icon for humans, and a question mark for other species.
 
-### `npm run build`
+### Error Handling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The application gracefully handles error states, providing a clear indication with the Font Awesome exclamation circle icon when the Star Wars API is down.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Search Functionality
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Dynamic Searching:** The search functionality allows users to find characters by name, with a loading state displayed during request processing.
+- **Clear Interaction:** Clearing the search input resets the table, returning to the first page and clearing any sorting selections.
 
-### `npm run eject`
+### Empty State
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- When there are no results from the search API, the application presents an empty state with a warning icon, maintaining a polished user interface.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Count Cards
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Informative count cards offer a quick overview, displaying totals for all results, droids, and humans (or other species).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Setup
 
-## Learn More
+Before running the application, ensure the following resources are included:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Font Awesome icon font](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css)
+- [Titillium Web font from Google Fonts](https://fonts.googleapis.com/css?family=Titillium+Web:200,600)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Building and Running the Application
 
-### Code Splitting
+This frontend application is built using ReactJS. To get started:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone the repository: `git clone https://github.com/Kkknight-12/front-end-task.git`
+2. Navigate to the project directory: `cd front-end-task`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-### Analyzing the Bundle Size
+Visit [http://localhost:3000](http://localhost:3000) in your browser to explore the Star Wars People Explorer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to open issues for any feedback, suggestions, or improvements. Thank you for exploring the Star Wars People Explorer!

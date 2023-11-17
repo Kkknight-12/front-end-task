@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import CustomTable from './components/Table/CustomTable';
+
+import { Container, Stack } from '@mui/material';
+import CardContainer from './components/card/Card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container sx={{ marginBlock: 5 }}>
+      <Stack gap={10}>
+        <CustomTable />
+        <CardContainer />
+      </Stack>
+    </Container>
   );
 }
 
